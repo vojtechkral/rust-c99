@@ -1,0 +1,11 @@
+[package]
+name = "c99"
+version = "0.1.0"
+authors = ["Vojtech Kral <vojtech@kral.hk>"]
+license = "BSD"
+
+description = "C99 types for easier interop"
+homepage = "https://github.com/vojtechkral/rust-c99"
+repository = "https://github.com/vojtechkral/rust-c99"
+
+build = "build.rs"
