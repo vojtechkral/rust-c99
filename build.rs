@@ -1,5 +1,3 @@
-#![feature(convert)]
-
 use std::process::{Command,Output};
 use std::env;
 use std::path::{Path, PathBuf};
@@ -31,5 +29,5 @@ fn main()
 	let gen_path = PathBuf::from(o_path.join("gen.rs"));
 	let mut gen_f = File::create(&gen_path).unwrap();
 
-	gen_f.write_all(gen_out.stdout.as_slice()).unwrap();
+	gen_f.write_all(&*gen_out.stdout).unwrap();
 }
