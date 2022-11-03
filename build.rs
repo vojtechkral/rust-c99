@@ -14,6 +14,9 @@ fn cmd_output_checked(c: &mut Command, msg: &str) -> Output
 
 fn main()
 {
+	let pointer_width = env::var("CARGO_CFG_TARGET_POINTER_WIDTH").unwrap();
+	env::set_var("CFLAGS", format!("-m{pointer_width}"));
+
 	let base_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
 	let base_path = Path::new(&base_dir);
 	let o_dir = env::var("OUT_DIR").unwrap();
