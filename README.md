@@ -1,5 +1,4 @@
 Provides C99 integer types for interfacing with C libraries that use them.
-Requires CMake and a decent C compiler to build.
 
 Contains following types and constants, all of which are in the `c99` crate:
 
