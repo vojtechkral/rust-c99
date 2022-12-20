@@ -1,1 +1,5 @@
 *.sublime-*
+Cargo.lock
+
+target/
+.idea/
