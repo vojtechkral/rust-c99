@@ -1,5 +1,5 @@
-*.sublime-*
 Cargo.lock
 
 target/
+.vscode/
 .idea/
